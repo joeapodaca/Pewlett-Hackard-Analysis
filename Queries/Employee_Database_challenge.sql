@@ -79,9 +79,9 @@ FROM mentorship_titles
 ORDER BY mentorship_titles.emp_no;
 
 
--- mentorship eligibility
+-- mentorship eligibilty
 SELECT emp_no, first_name, last_name, birth_date, from_date, to_date, title
-INTO mentorship_eligibility
+INTO mentorship_eligibilty
 FROM unique_mentorship
 WHERE (birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 AND (to_date BETWEEN '9999-01-01' AND '9999-01-01');
